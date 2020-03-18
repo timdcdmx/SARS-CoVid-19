@@ -48,3 +48,15 @@ header nav ul li{
 header nav ul li:hover{
     background-color: rgba(0, 0, 0, 0.5);
 }
+footer{
+    width: 100%;
+    height: 3%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(177,11,31,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}

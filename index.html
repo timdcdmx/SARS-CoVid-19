@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/gral.css">
     <link rel="stylesheet" href="/assets/css/index.css">
 </head>
+
 <body>
     <header>
         <img src="https://i.ibb.co/r73P8F4/logo-milenio-v2.png" alt="Logo">
@@ -19,42 +21,67 @@
     </header>
     <main>
         <form action="" method="post">
-            <div class="datosEquipo">
-                <label>NS Equipo</label>
-                <input type="text" name="nsEquipo" placeholder="Numero de Serie Equipo">
-                <label>Marca</label>
-                <select name="marca" id="cbMarca">
-                    <option value="Dell">Dell</option>
-                    <option value="HP">HP</option>
-                </select>
-                <label>Tipo de Equipo</label>
-                <select name="tipo" id="cbTipo">
-                    <option value="PC">PC</option>
-                    <option value="Laptop">Laptop</option>
-                </select>
-                <label>Modelo</label>
-                <input type="text" name="modelo" placeholder="Modelo del Equipo">
-                <label>¿Teclado?</label>
-                <input type="radio" name="tecladoSI" class="rbtn" value="Si">
-                <input type="radio" name="tecladoNO" class="rbtn" value="No">
-                <label>¿Mouse?</label>
-                <input type="radio" name="mouseSI" class="rbtn" value="Si">
-                <input type="radio" name="mouseNO" class="rbtn" value="No">
-                <label>NS Monitor</label>
-                <input type="text" name="nsMonitor" placeholder="Numero de Serie Monitor">
+            <span class="datos">
+                <p>Datos Equipo</p>
+                <div>
+                    <label for="nsEquipo">NS Equipo</label>
+                    <input type="text" name="nsEquipo" placeholder="Numero de Serie Equipo">
+                </div>
+                <div>
+                    <label for="cbMarca">Marca</label>
+                    <select name="marca" id="cbMarca" name="cbMarca">
+                        <option value="Dell">Dell</option>
+                        <option value="HP">HP</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="cbTipo">Tipo de Equipo</label>
+                    <select name="tipo" id="cbTipo" name="cbTipo">
+                        <option value="PC">PC</option>
+                        <option value="Laptop">Laptop</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Modelo</label>
+                    <input type="text" name="modelo" placeholder="Modelo del Equipo">
+                </div>
+                <div>
+                    <label for="tecladoSI">¿Teclado?</label>
+                    <input type="radio" name="tecladoSI" class="rbtn" value="1">
+                </div>
+                <div>
+                    <label for="mouseSI">¿Mouse?</label>
+                    <input type="radio" name="mouseSI" class="rbtn" value="1">
+                </div>
+                <div>
+                    <label for="nsMonitor">NS Monitor</label>
+                    <input type="text" name="nsMonitor" placeholder="Numero de Serie Monitor">
+                </div>
+            </span>
+            <span class="datos">
+                <p>Datos Usuario</p>
+                <div>
+                <label for="numEmpleado">Numero Empleado</label>
+                <input type="text" name="numEmpleado" placeholder="Numero de Empleado">
             </div>
-            <div class="datosUsuario">
-                <label>Numero de Empleado</label>
-                <input type="text" name="numEmpleado" placeholder="Numero de Nomina de Empleado">
-                <label>Nombre de Empleado</label>
+            <div>
+                <label for="nomEmpleado">Nombre Empleado</label>
                 <input type="text" name="nomEmpleado" placeholder="Nombre de Empleado">
-                <label>Area</label>
+            </div>
+            <div>
+                <label for="areaEmpleado">Area</label>
                 <input type="text" name="areaEmpleado" placeholder="Area de Empleado">
+            </div>
+            </span>
+            <div class="botones">
+                <button type="submit">Registrar</button>
+                <button name="print">Imprimir</button>
             </div>
         </form>
     </main>
     <footer>
-        <p>TI MDs CDMX</p>
+        <p>TI MD CDMX</p>
     </footer>
 </body>
+
 </html>
