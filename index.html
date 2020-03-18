@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SARS-CoVid-19</title>
+    <link rel="stylesheet" href="/assets/css/gral.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 </head>
 <body>
     <header>
-        <img src="" alt="Logo">
+        <img src="https://i.ibb.co/r73P8F4/logo-milenio-v2.png" alt="Logo">
         <nav>
             <ul>
                 <li><a href="#"></a>Registro</li>
@@ -16,14 +18,40 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <div class="miniContainer">
-                <a href="#">Registro</a>
+        <form action="" method="post">
+            <div class="datosEquipo">
+                <label>NS Equipo</label>
+                <input type="text" name="nsEquipo" placeholder="Numero de Serie Equipo">
+                <label>Marca</label>
+                <select name="marca" id="cbMarca">
+                    <option value="Dell">Dell</option>
+                    <option value="HP">HP</option>
+                </select>
+                <label>Tipo de Equipo</label>
+                <select name="tipo" id="cbTipo">
+                    <option value="PC">PC</option>
+                    <option value="Laptop">Laptop</option>
+                </select>
+                <label>Modelo</label>
+                <input type="text" name="modelo" placeholder="Modelo del Equipo">
+                <label>¿Teclado?</label>
+                <input type="radio" name="tecladoSI" class="rbtn" value="Si">
+                <input type="radio" name="tecladoNO" class="rbtn" value="No">
+                <label>¿Mouse?</label>
+                <input type="radio" name="mouseSI" class="rbtn" value="Si">
+                <input type="radio" name="mouseNO" class="rbtn" value="No">
+                <label>NS Monitor</label>
+                <input type="text" name="nsMonitor" placeholder="Numero de Serie Monitor">
             </div>
-            <div class="miniContainer">
-                <a href="#">Consulta</a>
+            <div class="datosUsuario">
+                <label>Numero de Empleado</label>
+                <input type="text" name="numEmpleado" placeholder="Numero de Nomina de Empleado">
+                <label>Nombre de Empleado</label>
+                <input type="text" name="nomEmpleado" placeholder="Nombre de Empleado">
+                <label>Area</label>
+                <input type="text" name="areaEmpleado" placeholder="Area de Empleado">
             </div>
-        </div>
+        </form>
     </main>
     <footer>
         <p>TI MDs CDMX</p>

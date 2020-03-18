@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://i.ibb.co/zS76SLS/logo-Milenio-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(177,11,31,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header img{
+    width: 15%;
+    margin-left: 10px;
+}
+header nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    margin-right: 20px;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header nav ul li{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 20px;
+   transition: all 1s;
+}
+header nav ul li:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
